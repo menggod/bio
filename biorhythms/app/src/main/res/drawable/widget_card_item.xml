@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 极光冰川半透明微晶槽，极富玻璃层次感 -->
+    <solid android:color="#1438BDF8" />
+    <corners android:radius="14dp" />
+    <stroke android:width="0.8dp" android:color="#2438BDF8" />
+</shape>

@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Gradle & Build caches
+.gradle/
+build/
+**/build/
+app/build/
+*.iml
+**/*.iml
+
+# IDE files
+.idea/
+**/.idea/
+local.properties
+/local.properties
+**/local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Keystore & Signing Secrets
+*.jks
+*.keystore
+*.p12
+*.key
+release.jks

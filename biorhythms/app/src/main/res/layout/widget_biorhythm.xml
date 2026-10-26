@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg_modern"
+    android:orientation="vertical"
+    android:paddingLeft="14dp"
+    android:paddingTop="12dp"
+    android:paddingRight="14dp"
+    android:paddingBottom="12dp">
+
+    <!-- 顶部：人物名字与日期 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- 极光微光点 -->
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/widget_item_emotional"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/widget_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="我 (自己)"
+                android:textColor="#F8FAFC"
+                android:textSize="13.5sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/widget_text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10月26日 周一"
+            android:textColor="#94A3B8"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 中间：高阶三大能量进度卡片 (深海冰川青极光玻璃微晶槽) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/widget_card_item"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp">
+
+        <!-- 1. 体力行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="体力"
+                android:textColor="#CBD5E1"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/widget_progress_physic_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="75"
+                android:progressDrawable="@drawable/widget_progress_physic" />
+
+            <TextView
+                android:id="@+id/widget_text_physic_val"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="+50%"
+                android:textColor="#FF4D4D"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 2. 情绪行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="情绪"
+                android:textColor="#CBD5E1"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/widget_progress_emotional_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="60"
+                android:progressDrawable="@drawable/widget_progress_emotional" />
+
+            <TextView
+                android:id="@+id/widget_text_emotional_val"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="+20%"
+                android:textColor="#38BDF8"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 3. 智力行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="智力"
+                android:textColor="#CBD5E1"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/widget_progress_intellect_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="90"
+                android:progressDrawable="@drawable/widget_progress_intellect" />
+
+            <TextView
+                android:id="@+id/widget_text_intellect_val"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="+80%"
+                android:textColor="#34D399"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 底部：状态评价芯片与便签指示 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- 状态芯片 (极光青蓝芯片) -->
+        <TextView
+            android:id="@+id/widget_text_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget_badge_bg"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:paddingTop="3dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="3dp"
+            android:text="✦ 良好上升期"
+            android:textColor="#38BDF8"
+            android:textSize="10.5sp"
+            android:textStyle="bold" />
+
+        <!-- 占位垫片 -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/widget_text_notes_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✏️ 便签"
+            android:textColor="#FBBF24"
+            android:textSize="10.5sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/widget_brand_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BIORHYTHMS"
+            android:textColor="#475569"
+            android:textSize="9sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

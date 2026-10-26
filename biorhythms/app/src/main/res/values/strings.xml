@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">生物节律</string>
+    <string name="widget_description">实时查看今日生理、情绪、智力三大节律状态与临界日预警</string>
+</resources>
